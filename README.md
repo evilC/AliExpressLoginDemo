@@ -59,6 +59,9 @@ If you know any better, I would welcome a PR.
 1. Launch the app
 
 2. Click `Login with DevTools Chrome`
+   The first time you do this, it will be like you just installed a fresh copy of Chrome (Setup page and all) - it's your normal Chrome instance, but seeing as I specified `--user-data-dir` as well as enabled the remote debugger, it's using a new profile.
+   This is stored in `BrowserProfile` in the app's folder.
+   This seemed like a sensible move, as then this app shouldn't have access to all your other cookies I guess?
 
 3. Follow the instructions in the app's dialog (ie log in)
 
